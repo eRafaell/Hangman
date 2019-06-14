@@ -22,11 +22,8 @@ categories = {
 used_letters = []
 made_list = list(categories.keys())
 drawn_category = random.choice(made_list)
-print(drawn_category)
 drawn_word = random.choice(categories[drawn_category])
-print(drawn_word)
 word_length = len(drawn_word)
-print(word_length)
 hangman_pic = ['''
 
 
@@ -143,13 +140,13 @@ hangman_pic = ['''
 
 
 def start_game():
+    print("\n")
     print("Hello player, welcome to Hangman game!")
     print("**************************************")
     print("Let's start a game!")
     print(f"Try to guess the word")
     print("**************************************")
     print(f"The word is from category: {drawn_category}")
-    print("\n")
     print(f"Your word has: {word_length} letters")
     print("\n")
 
